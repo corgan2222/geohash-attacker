@@ -1,0 +1,14 @@
+{
+    "tcpserver": {
+        "host": "127.0.0.1",
+        "port": 7070        
+    },
+    "influxserver": {
+        "host": "https://node:node@server.com:8086/telegraf"        
+    },
+    "ipstack": {
+        "key":[ "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" ],
+        "url": "http://api.ipstack.com"
+    }
+    
+}

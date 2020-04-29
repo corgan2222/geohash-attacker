@@ -1,0 +1,14 @@
+{
+    "name": "geohash-attacker",
+    "version": "1.0.1",
+    "url" : "https://github.com/corgan2222/geohash-atacker", 
+    "homepage": "https://github.com/corgan2222/geohash-atacker",
+    "email" : "stefan@knaak.org",
+
+    "devDependencies": {
+        "ngeohash": "~0.6.3",
+        "ngeohash": "~0.19.2",
+        "influx": "~5.5.1"
+    }
+
+}
