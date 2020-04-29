@@ -5,7 +5,8 @@
 // reads the IP from the Log and grab Geo Information from ipstack.com
 // write geo infos into influx
 
-//var a = "Jul  3 16:13:28 knaak sshd[23273]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=179.184.161.53";
+//log entry look like this
+//var a = "Jul  3 16:13:28 server sshd[23273]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=179.184.161.53";
 
 //https://ipstack.com/usage
 
@@ -23,10 +24,6 @@ const tcpserver_port = config.tcpserver.port;
 const influxserver_host = config.influxserver.host;
 const ipstack_url = config.ipstack.url;
 const ipstack_key = config.ipstack.key;
-
-//const port = 7070;
-//const host = "127.0.0.1";
-
 
 //create TCP Server 
 const server = net.createServer();
