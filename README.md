@@ -12,4 +12,5 @@ Setup:
 prepared for PM2
 - just run #pm2 start ecosystem.config.js 
 
-
+settings for rsyslog.conf
+https://github.com/corgan2222/geohash-attacker/tree/master/rsyslog
