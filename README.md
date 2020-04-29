@@ -1,7 +1,5 @@
 # geohash-attacker
-TCP Server wich looks for Geo information from a IP, wich is given by rsyslog if someone failed to login into ssh/mail
-store this infos in InfluxDB 
-view in grafana
+TCP Server wich looks for Geo information from a IP, wich is given by rsyslog if someone failed to login into ssh/mail and store this infos in InfluxDB to view on a worldmap in grafana
 
 Needs a (free) account from https://ipstack.com/
 
