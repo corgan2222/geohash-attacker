@@ -14,6 +14,7 @@
 var geohash = require("ngeohash");
 const axios = require("axios");
 const Influx = require("influx");
+var isIp = require('is-ip');
 
 // TCP handles
 const net = require('net');
@@ -50,11 +51,19 @@ server.on('connection', function(sock)
         var a = message.ip;
         var t = a.match(r);
         var ip = (t[0]);
+
+        var isIPTrue = isIp(ip);
+        if (!isIPTrue) {
+            console.log('No IP found - exit');
+            return false;
+        }    
+        
+
         var accessKey = ipstack_key[Math.floor(Math.random()*ipstack_key.length)];        
 
-        console.log(ip);        
-        console.log(message.username);
-        console.log(message.port);               
+        console.log('ip:' + ip);        
+        console.log('username:' + message.username);
+        console.log('port:' + message.port);               
 
         // IP Stack API Initialization.
         const instance = axios.create({

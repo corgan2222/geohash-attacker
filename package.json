@@ -1,14 +1,14 @@
 {
     "name": "geohash-attacker",
     "version": "1.0.2",
-    "url" : "https://github.com/corgan2222/geohash-atacker", 
+    "url": "https://github.com/corgan2222/geohash-atacker",
     "homepage": "https://github.com/corgan2222/geohash-atacker",
-    "email" : "stefan@knaak.org",
-
+    "email": "stefan@knaak.org",
     "devDependencies": {
-        "ngeohash": "~0.6.3",
         "ngeohash": "~0.19.2",
         "influx": "~5.5.1"
+    },
+    "dependencies": {
+        "is-ip": "^3.1.0"
     }
-
 }
